@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./image/logos/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./image/logos/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./image/logos/favicon-16x16.png"
+  />
+  <link rel="manifest" href="./image/logos/site.webmanifest" />
+  <link
+    rel="mask-icon"
+    href="./image/logos/safari-pinned-tab.svg"
+    color="#060a0b"
+  />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+    <title>AdminSite</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="#" class="brand"
+        ><i class="bx bxs-widget icon"></i> Admin</a
+      >
+      <ul class="side-menu">
+        <li>
+          <a href="#" class="active"
+            ><i class="bx bxs-dashboard icon"></i> Tableau de bord</a
+          >
+        </li>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- NAVBAR -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <i class="bx bx-menu toggle-sidebar"></i>
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="Search..." />
+          </div>
+        </form>
+        <span class="divider"></span>
+        <div class="profile">
+          <img src="./image/QRcomlogo.png" width="30" alt="logo" />
+          <ul class="profile-link">
+            <li>
+              <a href="#"
+                ><i class="bx bxs-log-out-circle"></i>Se déconnecter</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <main>
+        <h1 class="title">Tableau de bord</h1>
+        <div class="info-data">
+          <div class="card">
+            <div class="head">
+              <div>
+               <button>Changer le big background</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="head">
+              <div>
+                <button>Changer les polices</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ajout">
+          <button><i class="bx bx-plus-circle"></i> <span> Nouveau</span></button>
+        </div>
+        <div class="data">
+          <div class="content-data">
+            <h3>Nom du restaurateur</h3>
+            <div class="head">
+              <div class="menu">
+                <form class="form-profil">
+                  <div class="input-profil">
+                    <div class=" input-identifiants">
+                      <label class="label-id" for="text">Adresse mail*</label>
+                      <input class="input-id" type="text" placeholder="Votre email" required autocomplete="on" />
+                      <div>
+                        <label class="label-id" for="text">Mot de passe*</label>
+                        <input class="input-id" type="password" placeholder="Votre Mot de Passe" required autocomplete="on" />
+                      </div>
+                    </div>
+                    <div class="logo-form">
+                      <img src="./image/QRcomlogo.png" width="45" alt="logo restaurateur">
+                    </div>
+                  </div>
+                  <div class="bio">
+                    <label for="pseudo">Info complémentaire : </label>
+                    <textarea
+                      id="txt"
+                      minlength="20"
+                      maxlength="150"
+                      required
+                    ></textarea>
+                    <span class="bio-caract">Maximum 150 caractères</span>
+                  </div>
+                  <div class="btn-valid">
+                    <div class="input-msg">
+                      <input class="input-msg-private" type="text" placeholder="Message privé destiné au restaurateur" required />
+                    </div>
+                    <button type="submit" class="btn-validation" id="btn-valid-bio" >Valider</button>
+                  </div>
+                 </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- NAVBAR -->
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
