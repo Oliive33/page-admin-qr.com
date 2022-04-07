@@ -56,7 +56,7 @@
         <i class="bx bx-menu toggle-sidebar"></i>
         <form>
           <div class="form-group">
-            <input type="text" placeholder="Search..." />
+            <input type="text" placeholder="recherche..." />
           </div>
         </form>
         <span class="divider"></span>
@@ -129,14 +129,16 @@
               <form class="form-profil">
                 <div class="input-profil">
                   <div class="input-identifiants">
-                    <label class="label-id" for="text">Adresse mail*</label>
-                    <input
-                      class="input-id"
-                      type="text"
-                      placeholder="Votre email"
-                      required
-                      autocomplete="on"
-                    />
+                    <div>
+                      <label class="label-id" for="text">Adresse mail*</label>
+                      <input
+                        class="input-id"
+                        type="text"
+                        placeholder="Votre email"
+                        required
+                        autocomplete="on"
+                      />
+                    </div>
                     <div>
                       <label class="label-id" for="text">Mot de passe*</label>
                       <input
@@ -144,6 +146,39 @@
                         id="text"
                         type="password"
                         placeholder="Votre Mot de Passe"
+                        required
+                        autocomplete="on"
+                      />
+                    </div>
+                    <div>
+                      <label class="label-id" for="text">Nom*</label>
+                      <input
+                        class="input-id"
+                        id="text"
+                        type="text"
+                        placeholder="nom"
+                        required
+                        autocomplete="on"
+                      />
+                    </div>
+                    <div>
+                      <label class="label-id" for="text">Prénom*</label>
+                      <input
+                        class="input-id"
+                        id="text"
+                        type="text"
+                        placeholder="prénom"
+                        required
+                        autocomplete="on"
+                      />
+                    </div>
+                    <div>
+                      <label class="label-id" for="text">Téléphone*</label>
+                      <input
+                        class="input-id"
+                        id="text"
+                        type="tel"
+                        placeholder="téléphone"
                         required
                         autocomplete="on"
                       />
@@ -167,6 +202,9 @@
                   ></textarea>
                   <span class="bio-caract">Maximum 150 caractères</span>
                 </div>
+                <div>
+                  <button class="btn-qr">Générer un QR code</button>
+                </div>
                 <div class="btn-valid">
                   <div class="input-msg">
                     <input
@@ -183,9 +221,6 @@
                   >
                     Valider
                   </button>
-                </div>
-                <div>
-                  <button class="btn-qr">Générer un QR code</button>
                 </div>
               </form>
             </div>

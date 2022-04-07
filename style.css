@@ -186,9 +186,17 @@ nav .form-group {
   position: relative;
 }
 nav .form-group input {
-  display: none;
+  width: 100%;
+  background: var(--grey);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 10px 36px 10px 16px;
+  transition: all 0.3s ease;
 }
-
+nav .form-group input:focus {
+  box-shadow: 0 0 0 1px var(--blue), 0 0 0 4px var(--light-blue);
+}
 nav .nav-link {
   position: relative;
 }
@@ -407,8 +415,11 @@ main .content-data .head .menu {
   align-items: center;
 }
 .input-identifiants {
-  width: 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-left: 25px;
+  width: 50%;
+  gap: 20px;
 }
 .input-identifiants .input-id {
   margin-top: 10px;
@@ -488,7 +499,7 @@ main .btn-send:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px auto 0;
+  margin: 80px auto 80px;
 }
 /* MAIN */
 /* CONTENT */
@@ -498,7 +509,7 @@ main .btn-send:hover {
     width: 70%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 798px) {
   #content {
     position: relative;
     width: calc(100% - 60px);
@@ -508,11 +519,17 @@ main .btn-send:hover {
   nav .divider {
     display: none;
   }
+  .logo-form {
+    margin-bottom: 40px;
+  }
   .input-profil {
     flex-direction: column-reverse;
   }
   .input-identifiants {
+    width: 50%;
     margin-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 670px) {
@@ -541,6 +558,9 @@ main .btn-send:hover {
   .form-profil {
     padding: 30px 10px;
   }
+  .input-identifiants {
+    width: 50%;
+  }
   .input-identifiants .input-id {
     padding: 8px 20px 10px 15px;
   }
@@ -548,9 +568,14 @@ main .btn-send:hover {
     width: 85%;
   }
 }
+@media screen and (max-width: 570px) {
+  .input-identifiants {
+    width: 55%;
+  }
+}
 @media screen and (max-width: 510px) {
   .input-identifiants {
-    width: 95%;
+    width: 70%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -569,9 +594,15 @@ main .btn-send:hover {
   .bio .bio-caract {
     font-size: 11px;
   }
+  .input-identifiants {
+    width: 66%;
+  }
   .input-msg .input-msg-private {
     font-size: 10px;
     width: 92%;
+  }
+  .btn-qr {
+    margin: 40px auto 40px;
   }
 }
 @media screen and (max-width: 390px) {
