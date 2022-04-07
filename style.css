@@ -620,6 +620,9 @@ main .btn-send:hover {
     font-size: 9px;
     padding: 8px 0px 10px 7px;
   }
+  .input-identifiants {
+    width: 85%;
+  }
   .input-identifiants .input-id {
     padding: 8px 13px 10px 15px;
   }
