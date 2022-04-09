@@ -32,6 +32,10 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+    <script
+      src="https://kit.fontawesome.com/61764a972f.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>AdminSite</title>
   </head>
@@ -86,11 +90,39 @@
           </div>
           <div class="card">
             <div class="head">
-              <div>
-                <button>Changer les polices</button>
+              <div class="police-btn">
+                <button id="polices-btn">Changer les polices</button>
               </div>
             </div>
           </div>
+        </div>
+        <!-- police form container  -->
+        <div class="login-police-container">
+          <i class="fas fa-times" id="form-police-close"></i>
+          <form class="form-police">
+            <h3>Choix Polices</h3>
+            <div class="choix-polices">
+              <div class="choix police">
+                <label class="titles-form" for="theme-police"
+                  >Sélectionner un thème</label
+                >
+                <select name="polices" id="theme-police">
+                  <option value="classic">Classic (Par défaut)</option>
+                  <option value="manuscrit">Manuscrit</option>
+                  <option value="ardoise">Ardoise</option>
+                </select>
+              </div>
+              <input
+                class="input-file"
+                type="file"
+                name="input-file"
+                id="input-file"
+              />
+            </div>
+            <div class="btn-form">
+              <button type="submit" class="btn-police">Enregistrer</button>
+            </div>
+          </form>
         </div>
         <div class="ajout">
           <button>

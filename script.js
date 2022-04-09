@@ -104,3 +104,18 @@ window.addEventListener("click", function (e) {
     }
   }
 });
+//Apparition Pop up police
+let LangBtn = document.querySelector("#polices-btn");
+let loginLang = document.querySelector(".login-police-container");
+let formPoliceClose = document.querySelector("#form-police-close");
+
+window.onscroll = () => {
+  loginLang.classList.remove("active");
+};
+LangBtn.addEventListener("click", () => {
+  loginLang.classList.add("active");
+});
+
+formPoliceClose.addEventListener("click", () => {
+  loginLang.classList.remove("active");
+});

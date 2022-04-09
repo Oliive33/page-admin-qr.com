@@ -315,12 +315,6 @@ main .card .head {
   text-transform: uppercase;
   font-weight: 700;
 }
-/* main .data {
-  display: flex;
-  grid-gap: 20px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-} */
 main .data .content-data {
   display: flex;
   justify-content: space-around;
@@ -408,6 +402,130 @@ main .content-data .head .menu {
   padding: 30px 60px;
   width: 100%;
 }
+/****************************Popup police start*************************/
+/* .police-btn {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 4.8rem;
+  margin-bottom: 1rem;
+} */
+
+.police-btn select {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+.police-btn select option {
+  display: none;
+  visibility: hidden;
+}
+
+.btn-form {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-police {
+  display: inline-block;
+  margin-top: 3rem;
+  background: rgb(19, 19, 19);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+}
+.btn-police:hover {
+  transform: scale(0.95);
+}
+/* .choix-polices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+.choix {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+.choix select {
+  padding: 5px 20px 5px 2px;
+  font-weight: 500;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  outline: 1px solid #e6e4e4;
+  width: 70%;
+}
+.choix select option {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.input-file {
+  margin-top: 30px;
+}
+.choix .titles-form {
+  font-family: "Poppins", sans-serif;
+  color: #bfbfbf;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+.login-police-container {
+  position: fixed;
+  top: -130%;
+  left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-police-container.active {
+  top: 0;
+}
+
+.login-police-container .form-police {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 30rem;
+}
+
+.login-police-container .form-police h3 {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-police-container .form-police .btn-police {
+  display: block;
+  width: auto;
+  color: #fff;
+}
+
+.login-police-container #form-police-close {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
 /* Modifs identifiants */
 .input-profil {
   display: flex;
@@ -603,6 +721,13 @@ main .btn-send:hover {
   }
   .btn-qr {
     margin: 40px auto 40px;
+  }
+  .login-police-container .form-police {
+    padding: 1.5rem 1rem;
+    width: 19rem;
+  }
+  .input-file {
+    font-size: 11px;
   }
 }
 @media screen and (max-width: 390px) {
