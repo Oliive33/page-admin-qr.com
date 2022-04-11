@@ -402,15 +402,97 @@ main .content-data .head .menu {
   padding: 30px 60px;
   width: 100%;
 }
-/****************************Popup police start*************************/
-/* .police-btn {
+/************************ Popup big background*************************/
+.container-photo {
+  height: 350px;
+  width: 430px;
+  position: relative;
+}
+.container-photo .wrapper-photo {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  border: 2px dashed #c2cdda;
   display: flex;
-  justify-content: left;
   align-items: center;
-  margin-left: 4.8rem;
-  margin-bottom: 1rem;
-} */
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper-photo.active {
+  border: none;
+}
+.wrapper-photo .image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper-photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper-photo .icon {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  color: var(--red);
+}
+.wrapper-photo .text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #5b5b7b;
+}
+.wrapper-photo #cancel-btn i {
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  color: var(--red);
+  cursor: pointer;
+  display: none;
+}
+.wrapper-photo.active:hover #cancel-btn i {
+  display: block;
+}
+.wrapper-photo #cancel-btn i:hover {
+  color: #e74c3c;
+}
+.wrapper-photo .file-name {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 16px;
+  color: #fff;
+  display: none;
+  background: var(--red);
+}
+.wrapper-photo.active:hover .file-name {
+  display: block;
+}
+.container-photo #custom-btn {
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #000;
+}
 
+/****************************Popup police start*************************/
 .police-btn select {
   border: none;
   outline: none;
@@ -444,11 +526,6 @@ main .content-data .head .menu {
 .btn-police:hover {
   transform: scale(0.95);
 }
-/* .choix-polices {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
 .choix {
   display: flex;
   flex-direction: column;
@@ -478,7 +555,8 @@ main .content-data .head .menu {
   letter-spacing: 1px;
   padding-bottom: 10px;
 }
-.login-police-container {
+.login-police-container,
+.login-background-container {
   position: fixed;
   top: -130%;
   left: 0;
@@ -491,7 +569,8 @@ main .content-data .head .menu {
   justify-content: center;
 }
 
-.login-police-container.active {
+.login-police-container.active,
+.login-background-container.active {
   top: 0;
 }
 
@@ -517,7 +596,8 @@ main .content-data .head .menu {
   color: #fff;
 }
 
-.login-police-container #form-police-close {
+.login-police-container #form-police-close,
+.login-background-container #form-background-close {
   position: absolute;
   top: 2rem;
   right: 3rem;
@@ -729,6 +809,12 @@ main .btn-send:hover {
   .input-file {
     font-size: 11px;
   }
+  .container-photo {
+    width: 315px;
+  }
+  .wrapper-photo .text {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 390px) {
   .form-profil {
@@ -750,5 +836,8 @@ main .btn-send:hover {
   }
   .input-identifiants .input-id {
     padding: 8px 13px 10px 15px;
+  }
+  .container-photo {
+    width: 300px;
   }
 }

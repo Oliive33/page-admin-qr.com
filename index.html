@@ -84,8 +84,35 @@
           <div class="card">
             <div class="head">
               <div>
-                <button>Changer le big background</button>
+                <button id="background-btn">Changer le big background</button>
               </div>
+            </div>
+          </div>
+          <!-- big background container -->
+          <div class="login-background-container">
+            <i class="fas fa-times" id="form-background-close"></i>
+            <div class="container-photo">
+              <div class="wrapper-photo">
+                <div class="image">
+                  <img />
+                </div>
+                <div class="content">
+                  <div class="icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                  </div>
+                  <div class="text">
+                    Vous n'avez pas encore ajouté de photos
+                  </div>
+                </div>
+                <div id="cancel-btn">
+                  <i class="fas fa-times"></i>
+                </div>
+                <div class="file-name">File name here</div>
+              </div>
+              <button onclick="defaultBtnActive()" id="custom-btn">
+                Choisir une photo
+              </button>
+              <input id="default-btn" type="file" hidden />
             </div>
           </div>
           <div class="card">
