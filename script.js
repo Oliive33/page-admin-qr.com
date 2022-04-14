@@ -167,3 +167,37 @@ LangBtn.addEventListener("click", () => {
 formPoliceClose.addEventListener("click", () => {
   loginLang.classList.remove("active");
 });
+// Modif file
+
+const imgDivProfil = document.querySelector(".profile-pic-div");
+const imgPhoto = document.querySelector("#photo-profil");
+const file = document.querySelector("#file");
+const uploadBtn = document.querySelector("#uploadBtn");
+
+//Quand on passe au hover
+
+imgDivProfil.addEventListener("mouseenter", function () {
+  uploadBtn.style.display = "block";
+});
+
+//Quand on passe au hover
+
+imgDivProfil.addEventListener("mouseleave", function () {
+  uploadBtn.style.display = "none";
+});
+//Quand on choisit une photo to upload
+
+file.addEventListener("change", function () {
+  //this refers to file
+  const choosedFile = this.files[0];
+
+  if (choosedFile) {
+    const reader = new FileReader();
+
+    reader.addEventListener("load", function () {
+      imgPhoto.setAttribute("src", reader.result);
+    });
+
+    reader.readAsDataURL(choosedFile);
+  }
+});

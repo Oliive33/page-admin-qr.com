@@ -232,6 +232,17 @@
                       />
                     </div>
                     <div>
+                      <label class="label-id" for="text">Nom entreprise*</label>
+                      <input
+                        class="input-id"
+                        id="text"
+                        type="text"
+                        placeholder="nom entreprise"
+                        required
+                        autocomplete="on"
+                      />
+                    </div>
+                    <div>
                       <label class="label-id" for="text">Téléphone*</label>
                       <input
                         class="input-id"
@@ -244,11 +255,17 @@
                     </div>
                   </div>
                   <div class="logo-form">
-                    <img
-                      src="./image/QRcomlogo.png"
-                      width="45"
-                      alt="logo restaurateur"
-                    />
+                    <div class="logo-restaurant">
+                      <div class="profile-pic-div">
+                        <img
+                          src="./image/QRcomlogo.png"
+                          id="photo-profil"
+                          alt="image profile"
+                        />
+                        <input type="file" id="file" />
+                        <label for="file" id="uploadBtn">Upload file</label>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="bio">
@@ -292,6 +309,6 @@
     <!-- NAVBAR -->
 
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
