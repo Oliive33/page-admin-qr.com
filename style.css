@@ -743,24 +743,22 @@ main .btn-send:hover {
 
 @media screen and (max-width: 1180px) {
   .input-identifiants {
-    width: 100%;
+    width: 75%;
     margin-left: 0;
+  }
+  .input-profil {
+    flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 1125px) {
   .form-profil {
     padding: 30px 35px;
   }
-  .input-profil {
-    flex-direction: column-reverse;
-  }
   .input-identifiants {
     width: 65%;
   }
 }
 
-@media screen and (max-width: 1055px) {
-}
 @media screen and (max-width: 810px) {
   .input-identifiants {
     width: 70%;
@@ -777,7 +775,7 @@ main .btn-send:hover {
     display: none;
   }
   .logo-form {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 
   .input-identifiants {
@@ -822,6 +820,9 @@ main .btn-send:hover {
   .input-msg .input-msg-private {
     width: 85%;
   }
+  .logo-form {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 570px) {
   .input-identifiants {
@@ -830,7 +831,7 @@ main .btn-send:hover {
 }
 @media screen and (max-width: 510px) {
   .input-identifiants {
-    width: 70%;
+    width: 63%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -871,6 +872,10 @@ main .btn-send:hover {
   }
   .wrapper-photo .text {
     font-size: 14px;
+  }
+  .logo-form {
+    margin: 20px 0 20px 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 390px) {
